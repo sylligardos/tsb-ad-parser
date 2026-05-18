@@ -39,7 +39,7 @@ The bulk of the data (raw/, scores/, metrics/, runtime/) is gitignored because o
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/sylligardos/tsb_ad_parser.git
+git clone https://github.com/sylligardos/tsb-ad-parser.git
 cd tsb_ad_parser
 ```
 
