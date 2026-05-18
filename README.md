@@ -1,6 +1,6 @@
 # TSB-AD
 
-Python parser for the **TSB-AD** benchmark (Time Series Benchmark for Anomaly Detection) — a large-scale evaluation suite for time series anomaly detection published at NeurIPS 2024.
+Python parser for the **TSB-AD** benchmark (Time Series Benchmark for Anomaly Detection), a large-scale evaluation suite for time series anomaly detection published at NeurIPS 2024.
 
 ## What is TSB-AD?
 
@@ -112,4 +112,4 @@ parser.visualize_timeseries(
 ## Credits
 
 - **Benchmark data**: Qinghua Liu & John Paparrizos (NeurIPS 2024)
-- **This parser**: Emmanouil Sylligardos — 3rd year PhD, Paris, 2026
+- **This parser**: Emmanouil Sylligardos, 3rd year PhD, Paris, 2026

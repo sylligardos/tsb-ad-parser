@@ -39,7 +39,7 @@ class TSBADParser:
     BASELINES = ["Oracle", "RandomMS"]
     # Known ensemble methods. Any scores/<kind>/ subdirectory not in DETECTORS
     # or BASELINES is also auto-discovered as an ensemble at runtime, so this
-    # list acts as documentation and a fallback — you don't need to update it
+    # list acts as documentation and a fallback; you don't need to update it
     # when you add a new ensemble directory.
     ENSEMBLES = ["AccuCopy", "AOM", "AverageEnsembling", "CRH", "MaximumEnsembling", "MOA"]
     DETECTORS = [
@@ -513,7 +513,7 @@ class TSBADParser:
             njobs:      Number of parallel worker processes. None = cpu_count.
 
         Returns:
-            Tuple of (scores, problematic_files) — same as load_scores.
+            Tuple of (scores, problematic_files), same as load_scores.
         """
         scores, problematic_files = self.load_scores(
             detectors=detectors,

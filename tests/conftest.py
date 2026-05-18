@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from tsbadparser import TSBADParser
 
-# Absolute path to the data root — edit this if you move the data directory.
+# Absolute path to the data root. Edit this if you move the data directory.
 DATA_PATH = Path(__file__).parent.parent / "data"
 
 

@@ -1,6 +1,6 @@
 # data/
 
-Benchmark data for TSB-AD. The large files are gitignored — only `splits/` and
+Benchmark data for TSB-AD. The large files are gitignored; only `splits/` and
 the directory skeleton are tracked.
 
 ## Expected structure
@@ -26,7 +26,7 @@ data/
 
 The full benchmark is published alongside the NeurIPS 2024 paper:
 
-> Liu, Q. & Paparrizos, J. — *The elephant in the room: Towards a reliable
+> Liu, Q. & Paparrizos, J., *The elephant in the room: Towards a reliable
 > time-series anomaly detection benchmark*, NeurIPS 2024.
 
 Download the data from the official repository and place the files in the

@@ -80,7 +80,7 @@ def test_get_all_models(parser_uni, parser_multi):
 
 
 def test_detector_ensemble_baseline_are_disjoint(parser_uni, parser_multi):
-    """The three categories must never overlap — if they do, load_scores would
+    """The three categories must never overlap; if they do, load_scores would
     load ensembles when the caller expects only detectors, or vice versa."""
     for parser in (parser_uni, parser_multi):
         detectors = set(parser.get_detectors())
@@ -89,7 +89,7 @@ def test_detector_ensemble_baseline_are_disjoint(parser_uni, parser_multi):
         assert detectors & ensembles == set(), f"[{parser.kind}] detector/ensemble overlap: {detectors & ensembles}"
         assert detectors & baselines == set(), f"[{parser.kind}] detector/baseline overlap: {detectors & baselines}"
         assert ensembles & baselines == set(), f"[{parser.kind}] ensemble/baseline overlap: {ensembles & baselines}"
-        print(f"[{parser.kind}] detectors={len(detectors)}, ensembles={len(ensembles)}, baselines={len(baselines)} — all disjoint ✓")
+        print(f"[{parser.kind}] detectors={len(detectors)}, ensembles={len(ensembles)}, baselines={len(baselines)}, all disjoint ✓")
 
 
 def test_all_score_dirs_are_classified(parser_uni, parser_multi):
@@ -277,7 +277,7 @@ def test_load_runtime(parser_uni):
 
 
 # ---------------------------------------------------------------------------
-# Visualization (opens a window — close it to continue)
+# Visualization (opens a window, close it to continue)
 # ---------------------------------------------------------------------------
 
 def test_visualize_timeseries(parser_uni):
@@ -289,7 +289,7 @@ def test_visualize_timeseries(parser_uni):
     if len(scores) == 0:
         pytest.skip("No scores available for series 1")
 
-    print(f"\nVisualizing {fnames[0]} — close the window to continue.")
+    print(f"\nVisualizing {fnames[0]}, close the window to continue.")
     parser_uni.visualize_timeseries(
         timeseries[0],
         anomaly_labels=labels[0],
@@ -301,13 +301,13 @@ def test_visualize_timeseries(parser_uni):
 
 def test_visualize_no_labels(parser_uni):
     fnames, timeseries, labels = parser_uni.load_timeseries(series_id=[1])
-    print(f"\nVisualizing {fnames[0]} without labels — close the window to continue.")
+    print(f"\nVisualizing {fnames[0]} without labels, close the window to continue.")
     parser_uni.visualize_timeseries(timeseries[0], title="No labels")
 
 
 def test_visualize_multivariate(parser_multi):
     fnames, timeseries, labels = parser_multi.load_timeseries(series_id=[1])
-    print(f"\nVisualizing multivariate {fnames[0]} — close the window to continue.")
+    print(f"\nVisualizing multivariate {fnames[0]}, close the window to continue.")
     parser_multi.visualize_timeseries(
         timeseries[0],
         anomaly_labels=labels[0],

@@ -1,6 +1,6 @@
 # src/
 
-Contains the `tsbadparser` package — the only installable artifact in this repo.
+Contains the `tsbadparser` package, the only installable artifact in this repo.
 
 ```
 src/
