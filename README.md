@@ -39,8 +39,8 @@ The bulk of the data (raw/, scores/, metrics/, runtime/) is gitignored because o
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/sylligardos/TSB-AD.git
-cd TSB-AD
+git clone https://github.com/sylligardos/tsb_ad_parser.git
+cd tsb_ad_parser
 ```
 
 ### 2. Download the benchmark data
